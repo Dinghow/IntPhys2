@@ -15,7 +15,7 @@ import time
 import submitit
 import yaml
 
-from evals.scaffold import main as eval_main
+from prediction_evals.evals.scaffold import main as eval_main
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger()

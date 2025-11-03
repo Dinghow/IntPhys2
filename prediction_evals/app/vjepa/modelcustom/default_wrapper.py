@@ -28,10 +28,10 @@ import torch
 import copy
 import torch.nn.functional as F
 
-import app.vjepa.models.vision_transformer as vit
-import app.vjepa.models.predictor as vit_pred
-from src.models.utils.multimask import MultiMaskWrapper, PredictorMultiMaskWrapper
-from src.masks.utils import apply_masks
+import prediction_evals.app.vjepa.models.vision_transformer as vit
+import prediction_evals.app.vjepa.models.predictor as vit_pred
+from prediction_evals.src.models.utils.multimask import MultiMaskWrapper, PredictorMultiMaskWrapper
+from prediction_evals.src.masks.utils import apply_masks
 logging.basicConfig()
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)

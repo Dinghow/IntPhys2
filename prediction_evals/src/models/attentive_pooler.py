@@ -11,8 +11,8 @@ import math
 import torch
 import torch.nn as nn
 
-from src.models.utils.modules import Block, CrossAttention, CrossAttentionBlock
-from src.utils.tensors import trunc_normal_
+from prediction_evals.src.models.utils.modules import Block, CrossAttention, CrossAttentionBlock
+from prediction_evals.src.utils.tensors import trunc_normal_
 
 
 class AttentivePooler(nn.Module):

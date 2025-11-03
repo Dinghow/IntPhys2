@@ -11,8 +11,8 @@ import pprint
 
 import yaml
 
-from evals.scaffold import main as eval_main
-from src.utils.distributed import init_distributed
+from prediction_evals.evals.scaffold import main as eval_main
+from prediction_evals.src.utils.distributed import init_distributed
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--fname", type=str, help="name of config file to load", default="configs.yaml")

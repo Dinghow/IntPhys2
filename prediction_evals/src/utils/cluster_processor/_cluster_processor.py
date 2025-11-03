@@ -6,8 +6,8 @@ from typing import Iterable, Optional
 import submitit
 from filelock import FileLock
 
-from src.utils.logging import get_logger
-from src.utils.temp_ssd_dir import temp_ssd_dir
+from prediction_evals.src.utils.logging import get_logger
+from prediction_evals.src.utils.temp_ssd_dir import temp_ssd_dir
 
 
 class ClusterProcessor(ABC):

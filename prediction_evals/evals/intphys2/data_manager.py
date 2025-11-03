@@ -26,7 +26,7 @@ def init_data(
     log_dir=None,
     property=None,
 ):
-    from evals.intphys2.intphys2_dataset import make_videodataset
+    from prediction_evals.evals.intphys2.intphys2_dataset import make_videodataset
     print(root_path)
     dataset, data_loader, dist_sampler = make_videodataset(
         data_path=root_path,

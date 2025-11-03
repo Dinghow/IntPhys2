@@ -7,7 +7,7 @@ import pandas as pd
 import torch
 import yaml
 
-from src.utils.logging import get_logger
+from prediction_evals.src.utils.logging import get_logger
 
 logger = get_logger("Evaluator Base")
 

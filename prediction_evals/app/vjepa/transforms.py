@@ -8,7 +8,7 @@
 import torch
 import torchvision.transforms as transforms
 
-import src.datasets.utils.video.transforms as video_transforms
+import prediction_evals.src.datasets.utils.video.transforms as video_transforms
 
 def make_transforms(
     random_horizontal_flip=True,
@@ -19,7 +19,8 @@ def make_transforms(
     motion_shift=False,
     crop_size=224,
     normalize=((0.485, 0.456, 0.406),
-               (0.229, 0.224, 0.225))
+               (0.229, 0.224, 0.225)),
+    device='cpu',
 ):
 
     _frames_augmentation = VideoTransform(
@@ -31,6 +32,7 @@ def make_transforms(
         motion_shift=motion_shift,
         crop_size=crop_size,
         normalize=normalize,
+        device=device,
     )
     return _frames_augmentation
 
@@ -46,8 +48,8 @@ class VideoTransform(object):
         auto_augment=False,
         motion_shift=False,
         crop_size=224,
-        normalize=((0.485, 0.456, 0.406),
-                   (0.229, 0.224, 0.225))
+        normalize=((0.485, 0.456, 0.406),(0.229, 0.224, 0.225)),
+        device='cpu',
     ):
 
         self.random_horizontal_flip = random_horizontal_flip
@@ -56,8 +58,8 @@ class VideoTransform(object):
         self.auto_augment = auto_augment
         self.motion_shift = motion_shift
         self.crop_size = crop_size
-        self.mean = torch.tensor(normalize[0], dtype=torch.float32)
-        self.std = torch.tensor(normalize[1], dtype=torch.float32)
+        self.mean = torch.tensor(normalize[0], dtype=torch.float32, device=device)
+        self.std = torch.tensor(normalize[1], dtype=torch.float32, device=device)
         if not self.auto_augment:
             # Without auto-augment, PIL and tensor conversions simply scale uint8 space by 255.
             self.mean *= 255.

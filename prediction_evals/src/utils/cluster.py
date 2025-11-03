@@ -9,7 +9,7 @@ import socket
 import subprocess
 from functools import lru_cache
 
-from src.utils.logging import get_logger
+from prediction_evals.src.utils.logging import get_logger
 
 logger = get_logger("Cluster utils")
 

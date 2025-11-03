@@ -12,13 +12,13 @@ experiment:
     use_bfloat16: true
     frames_per_clip: 16
     context_lengths: [4,6,8,10,12,14]
-    frame_steps: 10
+    frame_steps: 5
     num_frames_to_pred: -1
     dataset: intphys2-debug
   max_context_mode: true
 model_kwargs:
-  checkpoint: /checkpoint/vjepa-h-rope/jepa-latest.pth.tar  
-  module_name: app.vjepa.modelcustom.default_wrapper
+  checkpoint: /checkpoint/vith16.pth.tar
+  module_name: prediction_evals.app.vjepa.modelcustom.default_wrapper
   wrapper_kwargs:
     no_predictor: false
     # num_output_frames: 2

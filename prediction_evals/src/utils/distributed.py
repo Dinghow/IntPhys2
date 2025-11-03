@@ -11,7 +11,7 @@ from pathlib import Path
 import torch
 import torch.distributed as dist
 
-from src.utils.logging import get_logger
+from prediction_evals.src.utils.logging import get_logger
 
 logger = get_logger()
 

@@ -13,7 +13,7 @@ from timm.models.layers import drop_path
 
 from einops import rearrange, repeat
 
-from src.models.utils.rope import RotaryEmbedding
+from prediction_evals.src.models.utils.rope import RotaryEmbedding
 import sys
 
 #disable if using python 3.12 or higher

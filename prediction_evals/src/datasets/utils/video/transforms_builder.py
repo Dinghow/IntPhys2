@@ -10,7 +10,7 @@ from typing import Optional
 import torch
 import torchvision.transforms as transforms
 
-import src.datasets.utils.video.transforms as video_transforms
+import prediction_evals.src.datasets.utils.video.transforms as video_transforms
 
 def make_transforms(
     random_horizontal_flip=True,

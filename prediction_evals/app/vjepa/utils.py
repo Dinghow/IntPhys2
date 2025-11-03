@@ -13,9 +13,9 @@ import torch
 import yaml
 from torch.utils.tensorboard import SummaryWriter
 
-import app.vjepa.models.predictor as vit_pred
-import app.vjepa.models.vision_transformer as video_vit
-from src.models.utils.multimask import MultiMaskWrapper, PredictorMultiMaskWrapper
+import prediction_evals.app.vjepa.models.predictor as vit_pred
+import prediction_evals.app.vjepa.models.vision_transformer as video_vit
+from prediction_evals.src.models.utils.multimask import MultiMaskWrapper, PredictorMultiMaskWrapper
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger()

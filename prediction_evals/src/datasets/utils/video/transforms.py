@@ -11,7 +11,7 @@ from PIL import Image
 from torch import Tensor
 from torchvision import transforms
 
-import src.datasets.utils.video.functional as FF
+import prediction_evals.src.datasets.utils.video.functional as FF
 
 _pil_interpolation_to_str = {
     Image.NEAREST: "PIL.Image.NEAREST",

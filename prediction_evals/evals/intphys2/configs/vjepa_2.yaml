@@ -18,7 +18,7 @@ experiment:
   max_context_mode: true
 model_kwargs:
   checkpoint: /checkpoint/vjepa-2-h/vith.pt
-  module_name: app.vjepa.modelcustom.default_wrapper
+  module_name: prediction_evals.app.vjepa.modelcustom.default_wrapper
   wrapper_kwargs:
     no_predictor: false
     # num_output_frames: 2

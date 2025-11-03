@@ -1,5 +1,5 @@
-from src.utils.cluster import dataset_paths
-from src.utils.logging import get_logger
+from prediction_evals.src.utils.cluster import dataset_paths
+from prediction_evals.src.utils.logging import get_logger
 
 logger = get_logger("Datasets utils")
 

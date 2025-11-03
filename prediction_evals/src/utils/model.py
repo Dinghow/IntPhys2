@@ -1,6 +1,6 @@
 import torch
 
-from src.utils.tensors import trunc_normal_
+from prediction_evals.src.utils.tensors import trunc_normal_
 
 
 def count_parameters(model):

@@ -26,7 +26,7 @@ import logging
 
 import torch
 
-import app.videomaev2.model as models
+import prediction_evals.app.videomaev2.model as models
 import torch.nn.functional as F
 import copy
 from einops import rearrange

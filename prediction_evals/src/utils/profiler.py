@@ -2,8 +2,8 @@ import os
 
 import torch
 
-from src.datasets.utils.dataloader import get_worker_info
-from src.utils.logging import get_logger
+from prediction_evals.src.datasets.utils.dataloader import get_worker_info
+from prediction_evals.src.utils.logging import get_logger
 
 logger = get_logger("Profiler utils")
 

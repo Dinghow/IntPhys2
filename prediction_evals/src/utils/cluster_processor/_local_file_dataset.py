@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from src.utils.logging import get_logger
+from prediction_evals.src.utils.logging import get_logger
 
 
 class LocalFileDataset:

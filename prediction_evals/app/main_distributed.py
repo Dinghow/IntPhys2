@@ -16,8 +16,8 @@ from pathlib import Path
 import submitit
 import yaml
 
-from app.scaffold import main as app_main
-from src.utils.logging import get_logger, git_information
+from prediction_evals.app.scaffold import main as app_main
+from prediction_evals.src.utils.logging import get_logger, git_information
 
 logger = get_logger(force=True)
 

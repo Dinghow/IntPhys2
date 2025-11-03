@@ -32,10 +32,10 @@ import torch.distributed as dist
 from datetime import timedelta
 
 
-from app.vjepa.transforms import make_transforms
+from prediction_evals.app.vjepa.transforms import make_transforms
 
-from evals.intphys2.utils import get_dataset_paths,batch_all_gather,pad_tensors
-from evals.intphys2.data_manager import init_data
+from prediction_evals.evals.intphys2.utils import get_dataset_paths,batch_all_gather,pad_tensors
+from prediction_evals.evals.intphys2.data_manager import init_data
 
 logging.basicConfig()
 logger = logging.getLogger()

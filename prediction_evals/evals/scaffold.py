@@ -7,7 +7,7 @@
 
 import importlib
 
-from src.utils.logging import get_logger
+from prediction_evals.src.utils.logging import get_logger
 
 logger = get_logger("Eval runner scaffold")
 
